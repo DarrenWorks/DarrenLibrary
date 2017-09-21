@@ -18,8 +18,6 @@ public class HaveMaxBytesEditText extends EditText implements TextWatcher {
 
     public HaveMaxBytesEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
-        context.getSharedPreferences().edit().apply();
-
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.HaveMaxBytesEditText);
 
         int count = a.getIndexCount();
